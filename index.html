@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101323">
+<title>A Little Surprise Under the Stars ♡</title>
+<style>
+:root{--night:#101323;--night2:#191d35;--paper:#f7f3eb;--ink:#25263c;--lav:#c9b9f4;--gold:#f3d9a0;--pink:#efc5d8}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#34365d 0,#171a30 42%,#0b0d18 100%);color:var(--paper);font-family:Georgia,"Times New Roman",serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 20px 30px,#fff 40%,transparent 60%),radial-gradient(1px 1px at 90px 80px,#f3d9a0 40%,transparent 60%),radial-gradient(1.5px 1.5px at 150px 130px,#fff 40%,transparent 60%),radial-gradient(1px 1px at 220px 40px,#c9b9f4 40%,transparent 60%);background-size:260px 170px;opacity:.55;z-index:-1}
+button{font:inherit;cursor:pointer}
+.top-note{text-align:center;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;padding:20px 12px 4px;color:#c7c5e8}
+.wrap{width:min(760px,92%);margin:16px auto 48px}
+.page{position:relative;background:linear-gradient(145deg,#20243b,#15182a);border:1px solid #666184;border-radius:14px;padding:clamp(22px,6vw,48px);box-shadow:0 15px 45px #0005;margin:20px 0;overflow:hidden}
+.page:before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 31px,#d4ccff0b 32px 33px)}
+.content{position:relative;z-index:1}
+.eyebrow{font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#c5b7ed}
+h1,h2{font-weight:normal;line-height:1.12;margin:14px 0}h1{font-size:clamp(39px,9vw,68px);color:#fff8ec}h2{font-size:clamp(30px,7vw,43px);color:#f8e9cf}
+p{font-size:17px;line-height:1.75;color:#e0dfef}
+.center{text-align:center}
+.sticker{display:inline-block;background:#35314e;color:#f6dfaa;padding:8px 13px;transform:rotate(-3deg);border:1px solid #77709b;font-size:13px}
+.moon{font-size:55px;margin:22px auto 8px;filter:drop-shadow(0 0 18px #f3d9a077)}
+.btn{border:1px solid #b9a9e7;border-radius:30px;background:#d8c9fa;color:#1b1b31;padding:13px 20px;margin:8px 5px;box-shadow:0 4px 0 #5b527d;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn.light{background:#292d49;color:#f7f0ff;border-color:#78739d;box-shadow:0 4px 0 #0a0b15}
+.hidden{display:none!important}
+.tape{position:absolute;top:9px;left:40%;width:90px;height:23px;background:#d8c9fa55;transform:rotate(-4deg)}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:25px 0}
+.polaroid{background:#f7f3eb;color:#29263a;padding:9px 9px 16px;box-shadow:0 4px 12px #0006;transform:rotate(-2deg)}
+.polaroid:nth-child(even){transform:rotate(3deg)}
+.photo{aspect-ratio:4/5;background:linear-gradient(145deg,#373c5c,#29253e);display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;color:#dcd5f6;font:13px Arial,sans-serif;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.caption{text-align:center;font-size:14px;margin-top:10px;color:#29263a}
+.letter{background:#f7f0df;color:#383049;border:1px dashed #aa94cb;padding:22px;max-width:540px;margin:20px auto;white-space:pre-wrap;line-height:1.85;text-align:left}
+.envelope{font-size:78px;border:0;background:transparent;display:block;margin:15px auto;transition:transform .2s}
+.envelope:hover{transform:rotate(-6deg) scale(1.05)}
+.final-heart{font-size:55px;animation:pulse 1.3s infinite alternate}
+.secret{color:#f6dfaa;font-size:19px}
+@keyframes pulse{to{transform:scale(1.12)}}
+.footer{text-align:center;font:11px Arial,sans-serif;color:#aaa7ce;padding:8px}
+.sparkle{position:fixed;pointer-events:none;z-index:9;animation:float 1.6s ease-out forwards;font-size:22px}
+@keyframes float{to{transform:translateY(-120px) rotate(25deg);opacity:0}}
+@media(max-width:460px){.photo-grid{gap:12px}.polaroid{padding:7px 7px 12px}.caption{font-size:12px}p{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="top-note">a little universe made just for you ✦</div>
+<main class="wrap">
+<section class="page center" id="welcome"><div class="content">
+<span class="sticker">sealed with love · open when ready</span>
+<div class="moon">☾ ✦ ☽</div>
+<div class="eyebrow">to my favourite person</div>
+<h1>Under a million stars,<br>it's still you. ♡</h1>
+<p>I made you a little corner of the universe. Take your time, tap around, and open every tiny surprise.</p>
+<button class="btn" onclick="goTo('memories');sprinkle()">Enter our little universe ✨</button>
+<p class="eyebrow">✦ just you, me, and a sky full of memories ✦</p>
+</div></section>
+<section class="page hidden" id="memories"><div class="tape"></div><div class="content">
+<div class="eyebrow">chapter one · our constellation</div><h2>Little moments,<br>forever favourites.</h2>
+<p>Every photo holds a little piece of us. Replace these four placeholders with your favourite pictures and write a caption that only the two of you understand.</p>
+<div class="photo-grid">
+<div class="polaroid"><div class="photo"><span>✦<br>Add photo 1</span></div><div class="caption">The day I keep replaying ♡</div></div>
+<div class="polaroid"><div class="photo"><span>✦<br>Add photo 2</span></div><div class="caption">My favourite smile</div></div>
+<div class="polaroid"><div class="photo"><span>✦<br>Add photo 3</span></div><div class="caption">A tiny moment, a big memory</div></div>
+<div class="polaroid"><div class="photo"><span>✦<br>Add photo 4</span></div><div class="caption">To many more with you</div></div>
+</div>
+<div class="center"><button class="btn" onclick="goTo('letterPage')">There's a letter for you →</button></div>
+</div></section>
+<section class="page hidden center" id="letterPage"><div class="content">
+<div class="eyebrow">chapter two · words from my heart</div><h2>A little letter,<br>just for you.</h2><p>Tap the envelope when you're ready to open it.</p>
+<button class="envelope" aria-label="Open the letter" onclick="openLetter()">💌</button>
+<div id="letter" class="letter hidden">My favourite person,
+
+Happy birthday. I hope this new chapter brings you peaceful days, unexpected happiness, and a hundred little reasons to smile. You make ordinary moments feel special just by being yourself.
+
+I hope you never forget how loved and appreciated you are. On the days you find it hard to see your own light, I hope you remember that someone out here sees so much good in you.
+
+With all my love,
+Your person ♡</div>
+<div class="center"><button class="btn light" onclick="goTo('shayariPage')">One more page… →</button></div>
+</div></section>
+<section class="page hidden center" id="shayariPage"><div class="content">
+<div class="eyebrow">a few lines, only for you</div><h2>From my heart to yours.</h2>
+<div class="letter" id="shayari">Yahan apni shayari likho… ♡
+
+Replace this text with your own lines, exactly as you want her to read them.</div>
+<button class="btn" onclick="goTo('finalPage')">One last surprise →</button>
+</div></section>
+<section class="page hidden center" id="finalPage"><div class="content">
+<div class="eyebrow">chapter three · a wish under the stars</div><div class="final-heart">🌙</div>
+<h2>Today, the universe celebrates you.</h2>
+<p>I hope life is gentle with your heart, that you keep finding reasons to laugh, and that this year gives you moments you'll want to remember forever.</p>
+<button class="btn" onclick="reveal()">Tap for your final surprise ✨</button>
+<p id="secret" class="secret hidden">If I could give you one thing, it would be the chance to see yourself through my eyes — so you could understand just how special you are. ♡</p>
+<div><button class="btn light" onclick="goTo('welcome')">Start the journey again ↺</button></div>
+</div></section>
+<div class="page center" style="padding:20px">
+<div class="content"><p style="font-size:14px;margin:0">A song for this little universe 🎵</p>
+<button class="btn light" id="musicBtn" onclick="toggleMusic()">▶ Play soft background music</button>
+<p style="font-size:12px;margin:5px 0 0;color:#aaa7ce">Optional: add your own music file named <b>music.mp3</b> beside index.html.</p>
+<audio id="music" loop preload="none"><source src="music.mp3" type="audio/mpeg"></audio>
+</div></div>
+<div class="footer">a tiny universe, made with love ♡</div>
+</main>
+<script>
+function goTo(id){['welcome','memories','letterPage','shayariPage','finalPage'].forEach(x=>document.getElementById(x).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});}
+function openLetter(){document.getElementById('letter').classList.remove('hidden');sprinkle();}
+function reveal(){document.getElementById('secret').classList.remove('hidden');sprinkle();}
+function sprinkle(){const symbols=['♡','✦','♥','✨','☾'];for(let i=0;i<16;i++){const s=document.createElement('span');s.className='sparkle';s.textContent=symbols[Math.floor(Math.random()*symbols.length)];s.style.left=Math.random()*100+'vw';s.style.top=(55+Math.random()*35)+'vh';document.body.appendChild(s);setTimeout(()=>s.remove(),1700);}}
+async function toggleMusic(){const a=document.getElementById('music'),b=document.getElementById('musicBtn');if(a.paused){try{await a.play();b.textContent='❚❚ Pause background music';}catch(e){b.textContent='Add music.mp3 beside index.html first';}}else{a.pause();b.textContent='▶ Play soft background music';}}
+</script>
+</body>
+</html>
